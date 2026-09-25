@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Meditate With God">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c2740"/>
+      <stop offset="1" stop-color="#081220"/>
+    </linearGradient>
+    <linearGradient id="aqua" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7ed4ff"/>
+      <stop offset="0.52" stop-color="#3dd6c3"/>
+      <stop offset="1" stop-color="#59c8ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="52" fill="url(#bg)"/>
+  <g fill="none" stroke="url(#aqua)" stroke-linecap="round">
+    <path d="M49 149c0-63 35-101 79-101s79 38 79 101" stroke-width="12"/>
+    <path d="M94 151c21 13 47 13 68 0" stroke-width="12"/>
+    <path d="M76 178c32 19 72 19 104 0" stroke-width="12"/>
+    <path d="M55 208c45 25 101 25 146 0" stroke-width="12"/>
+  </g>
+  <circle cx="128" cy="118" r="15" fill="url(#aqua)"/>
+</svg>

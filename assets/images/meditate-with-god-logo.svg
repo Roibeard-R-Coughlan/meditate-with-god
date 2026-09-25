@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 160" role="img" aria-labelledby="title desc">
+  <title id="title">Meditate With God</title>
+  <desc id="desc">A calm aqua meditation symbol beside the words Meditate With God.</desc>
+  <defs>
+    <linearGradient id="aqua" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7ed4ff"/>
+      <stop offset="0.52" stop-color="#3dd6c3"/>
+      <stop offset="1" stop-color="#59c8ff"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#aqua)" stroke-linecap="round">
+    <path d="M23 102C23 53 48 22 80 22s57 31 57 80" stroke-width="8"/>
+    <path d="M56 105c15 9 33 9 48 0" stroke-width="8"/>
+    <path d="M43 122c23 13 51 13 74 0" stroke-width="8"/>
+    <path d="M27 140c33 18 73 18 106 0" stroke-width="8"/>
+  </g>
+  <circle cx="80" cy="78" r="10" fill="url(#aqua)"/>
+  <text x="166" y="108" fill="#f4f8ff" font-family="Poppins, Inter, Arial, sans-serif" font-size="58" letter-spacing="-2">
+    <tspan font-weight="700">Meditate</tspan><tspan font-weight="400"> With God</tspan>
+  </text>
+</svg>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meditate With God: quiet, Scripture-rooted guided Christian meditations for prayer, trust, and rest.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/png" sizes="256x256" href="favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/meditate-with-god-icon.png">
+    <title>Meditate With God — Scripture-rooted guided meditation</title>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Meditate With God home">
+            <img class="brand-logo" src="assets/images/meditate-with-god-logo.svg" alt="Meditate With God">
+        </a>
+        <nav class="site-nav">
+            <a href="#library">Library</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#about">Why Meditate With God</a>
+        </nav>
+        <div class="header-actions">
+            <span class="pro-badge" id="pro-badge" hidden>Pro</span>
+            <button class="btn btn-ghost" id="account-btn" type="button">Log in</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="top">
+            <div class="hero-copy">
+                <p class="eyebrow">10-minute Scripture meditations</p>
+                <h1>Be still. Stay with Scripture. Meet with God.</h1>
+                <p class="hero-manifesto">
+                    A place where you don’t just read Scripture — you stay with it long enough for it to speak differently.
+                </p>
+                <p class="lede">
+                    Begin with two carefully made guided Christian meditations. Each session creates room to listen,
+                    reflect, pray, and rest in God’s presence — completely free, with no account required.
+                </p>
+                <div class="hero-actions">
+                    <a href="#library" class="btn btn-primary">Start a free meditation</a>
+                    <a href="#about" class="btn btn-outline">Why Meditate With God</a>
+                </div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <img src="assets/meditations/psalm-131/artwork.png" alt="">
+            </div>
+        </section>
+
+        <section class="categories" id="library">
+            <h2>Browse the library</h2>
+            <div class="chip-row" id="category-chips">
+                <button class="chip is-active" data-category="all" type="button">All</button>
+            </div>
+            <div class="catalog-grid" id="catalog-grid" aria-live="polite">
+                <p class="catalog-loading">Loading meditations…</p>
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <h2>Two complete meditations, free</h2>
+            <div class="pricing-grid">
+                <article class="price-card price-card--featured">
+                    <h3>Free</h3>
+                    <p class="price">€0</p>
+                    <ul>
+                        <li>Psalm 131: A Quieted Soul</li>
+                        <li>Matthew 7:7–8: Ask, Seek, Knock</li>
+                        <li>Full 10-minute guided experiences</li>
+                        <li>No account or subscription required</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>Why Meditate With God</h2>
+            <div class="about-grid">
+                <article>
+                    <h3>Scripture first</h3>
+                    <p>Every meditation begins with the Bible and makes space to receive its words slowly, prayerfully, and without hurry.</p>
+                </article>
+                <article>
+                    <h3>Space to reflect</h3>
+                    <p>Guidance and silence are carefully balanced so there is time to notice, respond, and rest with God.</p>
+                </article>
+                <article>
+                    <h3>Small and intentional</h3>
+                    <p>A focused library keeps the experience peaceful. Each meditation is written, voiced, paced, and reviewed with care.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div class="player-overlay" id="player-overlay" hidden>
+        <div class="player-panel" role="dialog" aria-modal="true" aria-labelledby="player-title" aria-describedby="player-error" tabindex="-1">
+            <button class="player-close" id="player-close" type="button" aria-label="Close player">✕</button>
+            <div class="backdrop" aria-hidden="true">
+                <img src="assets/images/night.JPG" alt="" id="player-backdrop">
+            </div>
+            <h3 class="player-title" id="player-title"></h3>
+            <div class="time-select" id="time-select" role="group" aria-label="Session duration"></div>
+            <div class="player-container">
+                <audio class="song" preload="metadata"></audio>
+                <div class="timer-ring">
+                    <svg class="track-outline" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+                    </svg>
+                    <svg class="moving-outline" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+                    </svg>
+                    <p class="time-display"><span id="player-time">0:00</span><span class="time-label">remaining</span></p>
+                </div>
+                <div class="transport-controls">
+                    <button class="player-control player-play" id="player-play" type="button" aria-label="Play meditation">
+                        <img src="assets/icons/play.png" alt="" aria-hidden="true">
+                    </button>
+                    <button class="player-control player-replay" id="player-replay" type="button" aria-label="Replay from the beginning">
+                        <img src="assets/icons/replay.png" alt="" aria-hidden="true">
+                    </button>
+                </div>
+                <p class="player-error" id="player-error" role="status" aria-live="polite" hidden></p>
+            </div>
+        </div>
+    </div>
+
+    <dialog id="auth-dialog" class="auth-dialog">
+        <form method="dialog" class="auth-form" id="auth-form">
+            <h3 id="auth-title">Log in</h3>
+            <label>Email <input type="email" id="auth-email" required autocomplete="email"></label>
+            <label>Password <input type="password" id="auth-password" required minlength="8" autocomplete="current-password"></label>
+            <p class="auth-error" id="auth-error" hidden></p>
+            <div class="auth-actions">
+                <button class="btn btn-primary" type="submit" id="auth-submit">Log in</button>
+                <button class="btn btn-ghost" type="button" id="auth-toggle">Need an account? Sign up</button>
+            </div>
+            <button class="btn btn-ghost" type="button" id="auth-cancel">Cancel</button>
+        </form>
+    </dialog>
+
+    <footer class="site-footer">
+        <p>Meditate With God — quiet, Scripture-rooted meditation for a deeper connection.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
