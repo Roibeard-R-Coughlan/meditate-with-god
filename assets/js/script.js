@@ -6,7 +6,7 @@
     // By default the app assumes the API lives on the same origin (e.g. Hostinger,
     // where server/src/index.js serves both the API and this static site).
     // When no API is reachable at all (e.g. a plain GitHub Pages demo) the app falls
-    // back to the static catalog below and every track behaves as a free preview.
+    // back to the static catalog below; premium entries remain visible and locked.
     const API_BASE = window.MEDITATE_WITH_GOD_API_BASE || window.STILLPOINT_API_BASE || "/api";
     const STATIC_CATALOG_URL = "assets/data/meditations.json";
     const TOKEN_KEY = "meditate-with-god.token";
@@ -147,13 +147,18 @@
             card.className = "meditation-card";
             card.tabIndex = 0;
             card.setAttribute("role", "button");
-            card.setAttribute("aria-label", `Play ${m.title}`);
 
             const locked = m.isPremium && !(state.user && state.user.hasPro);
+            const comingSoon = m.isComingSoon === true;
+            const badgeText = comingSoon
+                ? (locked ? "Pro · Coming soon" : "Coming soon")
+                : (locked ? "Pro" : "");
+            const ariaAction = locked ? "Unlock" : (comingSoon ? "Preview" : "Play");
+            card.setAttribute("aria-label", `${ariaAction} ${m.title}`);
             const categoryName = (state.catalog.categories.find((c) => c.id === m.category) || {}).name || m.category;
 
             card.innerHTML = `
-                ${locked ? '<span class="meditation-card__lock">Pro</span>' : ""}
+                ${badgeText ? `<span class="meditation-card__lock">${badgeText}</span>` : ""}
                 <div class="meditation-card__image"><img src="${m.image}" alt="" loading="lazy"></div>
                 <div class="meditation-card__body">
                     <span class="meditation-card__tag">${categoryName}</span>
@@ -162,11 +167,11 @@
                 </div>
             `;
 
-            card.addEventListener("click", () => openMeditation(m, locked));
+            card.addEventListener("click", () => openMeditation(m, locked, comingSoon));
             card.addEventListener("keydown", (e) => {
                 if (e.key === "Enter" || e.key === " ") {
                     e.preventDefault();
-                    openMeditation(m, locked);
+                    openMeditation(m, locked, comingSoon);
                 }
             });
             catalogGrid.appendChild(card);
@@ -180,11 +185,12 @@
     }
 
     // ---------- Player ----------
-    function openMeditation(meditation, locked) {
+    function openMeditation(meditation, locked, comingSoon) {
         if (locked) {
             document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
             return;
         }
+        if (comingSoon) return;
         if (!meditation) return;
         const durations = Array.isArray(meditation.durations)
             ? meditation.durations.filter((seconds) => Number.isFinite(seconds) && seconds > 0)

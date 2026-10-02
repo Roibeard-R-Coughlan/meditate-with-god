@@ -28,6 +28,53 @@
       "image": "assets/meditations/matthew-7-7-8/artwork.png",
       "icon": "assets/images/meditate-with-god-icon.png",
       "isPremium": false
+    },
+    {
+      "id": "genesis-28-10-19",
+      "title": "And I Didn't Know It",
+      "category": "scripture-prayer",
+      "description": "A guided meditation on Genesis 28:10–19, discovering God's presence in ordinary places and uncertain seasons.",
+      "durations": [900],
+      "audio": "assets/meditations/genesis-28-10-19/genesis-28-10-19-production.wav",
+      "image": "assets/meditations/genesis-28-10-19/artwork.jpg",
+      "icon": "assets/images/meditate-with-god-icon.png",
+      "isPremium": false
+    },
+    {
+      "id": "psalm-23",
+      "title": "Psalm 23: Beside Still Waters",
+      "category": "scripture-prayer",
+      "description": "A forthcoming guided meditation on the Good Shepherd, quiet provision, and resting in God's faithful care.",
+      "durations": [600],
+      "audio": "",
+      "image": "assets/meditations/coming-soon/psalm-23.png",
+      "icon": "assets/images/meditate-with-god-icon.png",
+      "isPremium": true,
+      "isComingSoon": true
+    },
+    {
+      "id": "isaiah-40-31",
+      "title": "Isaiah 40:31: Renewed Strength",
+      "category": "scripture-prayer",
+      "description": "A forthcoming guided meditation for seasons of weariness, waiting on the Lord, and receiving renewed strength.",
+      "durations": [600],
+      "audio": "",
+      "image": "assets/meditations/coming-soon/isaiah-40-31.png",
+      "icon": "assets/images/meditate-with-god-icon.png",
+      "isPremium": true,
+      "isComingSoon": true
+    },
+    {
+      "id": "john-15-4-5",
+      "title": "John 15:4–5: Abide in Me",
+      "category": "scripture-prayer",
+      "description": "A forthcoming guided meditation on remaining in Christ, receiving life from the true vine, and bearing lasting fruit.",
+      "durations": [600],
+      "audio": "",
+      "image": "assets/meditations/coming-soon/john-15-4-5.png",
+      "icon": "assets/images/meditate-with-god-icon.png",
+      "isPremium": true,
+      "isComingSoon": true
     }
   ]
 }
