@@ -314,17 +314,33 @@
     }
 
     playBtn.addEventListener("click", togglePlay);
-    replayBtn.addEventListener("click", () => {
+    replayBtn.addEventListener("click", async () => {
         if (!state.current || !song.getAttribute("src")) {
-            showPlayerError("Select a meditation before replaying.");
+            showPlayerError("Select a meditation before rewinding.");
             return;
         }
         clearPlayerError();
+        const wasPlaying = !song.paused;
         try {
-            song.currentTime = 0;
-            resetProgress();
+            const currentTime = Number.isFinite(song.currentTime) ? song.currentTime : 0;
+            song.currentTime = Math.max(0, currentTime - 30);
+            outline.style.strokeDashoffset = outlineLength - (song.currentTime / state.duration) * outlineLength;
+            timeDisplay.textContent = formatTime(Math.max(state.duration - song.currentTime, 0));
+
+            if (wasPlaying) {
+                const requestId = ++state.playRequestId;
+                await song.play();
+                if (requestId !== state.playRequestId || playerOverlay.hidden) {
+                    song.pause();
+                    return;
+                }
+                setPlayingState(true);
+            } else {
+                setPlayingState(false);
+            }
         } catch (_err) {
-            showPlayerError("This meditation could not be restarted. Please try again.");
+            setPlayingState(false);
+            showPlayerError("This meditation could not be rewound. Please try again.");
         }
     });
     playerClose.addEventListener("click", closePlayer);
