@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-10-04T14:21:53.048Z",
+  "passed": true,
+  "narration": {
+    "path": "retained locally; excluded from public deployment",
+    "sha256": "3187B6FD879FF3AB4703520895A02A5D9642138520948F9289727F1D8C225C3C",
+    "durationSeconds": 750,
+    "rmsDbfs": -21.037147368186126,
+    "peakDbfs": -0.15889754958101554,
+    "clippedSamples": 0,
+    "firstAudibleSeconds": 20.09922902494331,
+    "sampleRate": 22050,
+    "channels": 1,
+    "bitsPerSample": 16
+  },
+  "master": {
+    "path": "assets/meditations/elijah-1-kings-19/elijah-1-kings-19-production.wav",
+    "sha256": "E1E6921608B7539D31C3A0242D35C7086DBC146096F63D9452E98627E53930F7",
+    "durationSeconds": 750,
+    "sampleRate": 22050,
+    "channels": 2,
+    "bitsPerSample": 16,
+    "peakDbfs": -1.4999999999999982,
+    "clippedSamples": 0
+  },
+  "checks": {
+    "exactRoundRuntime": true,
+    "voiceStartsAroundTwentySeconds": true,
+    "approvedWordSequencePreserved": true,
+    "openingStoryBreathingAdded": true,
+    "reportedGlitchRegionReplaced": true,
+    "repairWasLocalized": true,
+    "noTimeStretching": true,
+    "continuousMusic": true,
+    "narrationReactiveDucking": false,
+    "noClipping": true
+  }
+}

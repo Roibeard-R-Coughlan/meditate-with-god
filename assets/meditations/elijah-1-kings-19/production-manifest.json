@@ -1,0 +1,77 @@
+{
+  "id": "elijah-1-kings-19",
+  "title": "After the Fire",
+  "scripture": "1 Kings 19",
+  "durationSeconds": 750,
+  "audio": {
+    "path": "assets/meditations/elijah-1-kings-19/elijah-1-kings-19-production.wav",
+    "sha256": "E1E6921608B7539D31C3A0242D35C7086DBC146096F63D9452E98627E53930F7",
+    "sampleRate": 22050,
+    "channels": 2,
+    "bitsPerSample": 16,
+    "peakDbfs": -1.5,
+    "clippedSamples": 0
+  },
+  "sourceNarration": {
+    "sha256": "3187B6FD879FF3AB4703520895A02A5D9642138520948F9289727F1D8C225C3C",
+    "durationSeconds": 750,
+    "sampleRate": 22050,
+    "channels": 1,
+    "bitsPerSample": 16,
+    "provider": "ElevenLabs",
+    "model": "eleven_v3",
+    "voice": "Ryan",
+    "speed": 0.8,
+    "retainedLocally": true,
+    "includedInPublicDeployment": false,
+    "localizedRepairUsed": true,
+    "timeStretchingUsed": false
+  },
+  "artwork": {
+    "path": "assets/meditations/elijah-1-kings-19/artwork.png",
+    "sha256": "7D5592220610A46770D15A4C6BC96073BC7FC4FAB7A78E718F48E1F6081A327D",
+    "source": "Generated with OpenAI image generation for this meditation"
+  },
+  "script": {
+    "path": "assets/meditations/elijah-1-kings-19/meditation-script.md",
+    "sha256": "DBCC50AAF93FB75B6CA3ECA54567C3AC86913CADAB897FDC6AAD630D71102F6C"
+  },
+  "reports": {
+    "pacing": "assets/meditations/elijah-1-kings-19/pacing-report.json",
+    "mix": "assets/meditations/elijah-1-kings-19/mix-report.json",
+    "qa": "assets/meditations/elijah-1-kings-19/qa-report.json"
+  },
+  "pacing": {
+    "voiceStartSeconds": 20.09922902494331,
+    "openingStoryBreathingSpaces": 12,
+    "closingReflectionRoundingSeconds": 3.20702947845805,
+    "reportedGlitchRegionReplaced": true,
+    "approvedSpokenWordingChanged": false
+  },
+  "mix": {
+    "music": "experiments/elijah-1-kings-19/music/fearful-awe.mp3",
+    "continuousMusic": true,
+    "completeTrackRepeats": 3,
+    "crossfadeSeconds": 12,
+    "activeSpeechMusicBelowVoiceDb": -18.5,
+    "narrationReactiveDucking": false
+  },
+  "publication": {
+    "approved": true,
+    "requestedByProjectOwnerOn": "2026-10-04",
+    "catalogueUpdated": true
+  },
+  "qualityChecks": {
+    "automatedQaPassed": true,
+    "exactTwelveMinutesThirtySecondsVerified": true,
+    "voiceStartsAroundTwentySeconds": true,
+    "approvedWordSequencePreserved": true,
+    "localizedRepairVerified": true,
+    "continuousMusicVerified": true,
+    "clippingDetected": false
+  },
+  "musicRights": {
+    "status": "User-supplied track; publication requested by the project owner on 2026-10-04.",
+    "followUp": "Retain the original source and licence record with the project archive."
+  }
+}

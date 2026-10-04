@@ -41,6 +41,17 @@
       "isPremium": false
     },
     {
+      "id": "elijah-1-kings-19",
+      "title": "After the Fire",
+      "category": "scripture-prayer",
+      "description": "A guided Christian meditation on 1 Kings 19, meeting God in exhaustion and listening for the gentle whisper after the fire.",
+      "durations": [750],
+      "audio": "assets/meditations/elijah-1-kings-19/elijah-1-kings-19-production.wav",
+      "image": "assets/meditations/elijah-1-kings-19/artwork.png",
+      "icon": "assets/images/meditate-with-god-icon.png",
+      "isPremium": false
+    },
+    {
       "id": "psalm-23",
       "title": "Psalm 23: Beside Still Waters",
       "category": "scripture-prayer",

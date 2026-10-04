@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-10-04T14:21:52.880Z",
+  "output": "assets/meditations/elijah-1-kings-19/elijah-1-kings-19-production.wav",
+  "outputSha256": "E1E6921608B7539D31C3A0242D35C7086DBC146096F63D9452E98627E53930F7",
+  "durationSeconds": 750,
+  "sampleRate": 22050,
+  "channels": 2,
+  "bitsPerSample": 16,
+  "narration": {
+    "source": "retained locally; excluded from public deployment",
+    "sourceSha256": "3187B6FD879FF3AB4703520895A02A5D9642138520948F9289727F1D8C225C3C",
+    "playbackFactor": 1,
+    "narrationReactiveProcessing": false
+  },
+  "music": {
+    "source": "experiments\\elijah-1-kings-19\\music\\fearful-awe.mp3",
+    "sourceSha256": "01EB36068A199F707D60959C739BC79C63053632FCBC9DD3E79440B23CB5EC0F",
+    "decodedDurationSeconds": 294.0342857142857,
+    "construction": "complete-track repeats with equal-power crossfades; continuous bed; no narration-reactive ducking",
+    "placementStartSeconds": [
+      0,
+      282.0342857142857,
+      564.0685714285714
+    ],
+    "crossfadeSeconds": 12,
+    "openingFadeSeconds": 3,
+    "openingLiftDb": 2,
+    "openingLiftHoldSeconds": 15,
+    "openingLiftReleaseSeconds": 25,
+    "closingFadeSeconds": 12,
+    "appliedGainDbBeforeMaster": -9.18179272422074,
+    "targetActiveSpeechMusicBelowVoiceDb": -18.5,
+    "activeSpeechVoiceRmsDbfs": -17.705511717957265,
+    "activeSpeechMusicRmsDbfs": -36.205511717957265,
+    "activeSpeechMusicBelowVoiceDb": -18.5,
+    "fullClipVoiceRmsDbfs": -22.427015520703563,
+    "fullClipMusicRmsDbfs": -36.205822180946306,
+    "masterGainDb": -1.3898681525174372,
+    "targetPeakDbfs": -1.5,
+    "finalPeakDbfs": -1.4999999999999982,
+    "clippedSamples": 0,
+    "rightsStatus": "User-supplied track; publication requested by the project owner on 2026-10-04."
+  }
+}

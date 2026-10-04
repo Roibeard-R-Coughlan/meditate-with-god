@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-10-04T14:21:52.757Z",
+  "targetDurationSeconds": 750,
+  "openingSilenceSeconds": 20,
+  "voiceStartsAtSeconds": 20.09922902494331,
+  "openingStoryBreaths": [
+    {
+      "after": "Elijah had just witnessed something extraordinary.",
+      "seconds": 0.8
+    },
+    {
+      "after": "On Mount Carmel, he had stood before the people of Israel and the prophets of Baal.",
+      "seconds": 0.9
+    },
+    {
+      "after": "He had prayed.",
+      "seconds": 1
+    },
+    {
+      "after": "And fire had fallen.",
+      "seconds": 1.2
+    },
+    {
+      "after": "But almost immediately afterwards, everything changed.",
+      "seconds": 0.9
+    },
+    {
+      "after": "Queen Jezebel sent word that she intended to kill him.",
+      "seconds": 0.9
+    },
+    {
+      "after": "And Elijah became afraid.",
+      "seconds": 1
+    },
+    {
+      "after": "He ran.",
+      "seconds": 1.2
+    },
+    {
+      "after": "He left his servant behind.",
+      "seconds": 0.8
+    },
+    {
+      "after": "Then he walked alone for another day into the wilderness.",
+      "seconds": 1
+    },
+    {
+      "after": "Until eventually…",
+      "seconds": 0.7
+    },
+    {
+      "after": "he sat beneath a tree.",
+      "seconds": 0.8
+    }
+  ],
+  "repair": {
+    "reportedGlitchAtOriginalPacedSeconds": 258,
+    "replacedFrom": "There he entered a cave.",
+    "replacedThrough": "Elijah poured out what was inside him.",
+    "source": "experiments\\elijah-1-kings-19\\after-the-fire-repair-context.wav",
+    "requestId": "cqKdG0XSNptYPPmHVAdE",
+    "characterCost": 65,
+    "originalPacedStartSeconds": 278.3669841269841,
+    "originalPacedEndSeconds": 289.9009977324263,
+    "replacementSecondsWithAuthoredPause": 12.331020408163266,
+    "crossfadeMilliseconds": 12
+  },
+  "durationBeforeRoundingSeconds": 746.792970521542,
+  "closingReflectionRoundingAddedSeconds": 3.20702947845805,
+  "finalDurationSeconds": 750,
+  "approvedSpokenWordingChanged": false,
+  "timeStretchingUsed": false
+}

@@ -224,7 +224,7 @@
         durations.forEach((seconds) => {
             const btn = document.createElement("button");
             btn.type = "button";
-            btn.textContent = `${Math.round(seconds / 60)} min`;
+            btn.textContent = seconds % 60 === 0 ? `${seconds / 60} min` : formatTime(seconds);
             const isActive = seconds === state.duration;
             btn.classList.toggle("is-active", isActive);
             btn.setAttribute("aria-pressed", String(isActive));
