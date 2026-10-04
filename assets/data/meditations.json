@@ -13,19 +13,8 @@
       "category": "scripture-prayer",
       "description": "A guided meditation on Psalm 131, moving from striving and control toward quiet trust and rest in God's presence.",
       "durations": [600],
-      "audio": "assets/meditations/psalm-131/psalm-131-production.wav",
+      "audio": "assets/meditations/psalm-131/psalm-131-production-v2.wav",
       "image": "assets/meditations/psalm-131/artwork.png",
-      "icon": "assets/images/meditate-with-god-icon.png",
-      "isPremium": false
-    },
-    {
-      "id": "matthew-7-7-8",
-      "title": "Ask, Seek, Knock: Patient Trust",
-      "category": "scripture-prayer",
-      "description": "A guided Christian meditation on Matthew 7:7–8, inviting honest prayer, persistent seeking, and trust in God's goodness.",
-      "durations": [600],
-      "audio": "assets/meditations/matthew-7-7-8/matthew-7-7-8-production.wav",
-      "image": "assets/meditations/matthew-7-7-8/artwork.png",
       "icon": "assets/images/meditate-with-god-icon.png",
       "isPremium": false
     },
